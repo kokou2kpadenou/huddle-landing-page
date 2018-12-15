@@ -1,0 +1,22 @@
+{
+  "name": "huddle-landing-page-251784-master",
+  "version": "1.0.0",
+  "description": "![Header/intro section for the Huddle landing page with alternating sections](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kokou2kpadenou/huddle-landing-page.git"
+  },
+  "author": "kokou kpadenou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kokou2kpadenou/huddle-landing-page/issues"
+  },
+  "homepage": "https://github.com/kokou2kpadenou/huddle-landing-page#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
