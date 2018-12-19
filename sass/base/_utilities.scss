@@ -1,0 +1,38 @@
+.always-center {
+  text-align: center;
+}
+
+.responsive-center {
+  text-align: center;
+}
+
+.bottom-margin-big {
+  margin-bottom: 11rem;
+}
+
+.bottom-margin-medium {
+  margin-bottom: 8rem;
+}
+
+.bottom-margin-small {
+  margin-bottom: 4rem;
+}
+
+.top-margin-big {
+  margin-top: 10rem;
+}
+
+.top-margin-medium {
+  margin-top: 6rem;
+}
+
+.img-80-100 { width: 100%; }
+.img-100 { width: 100%; }
+.img-logo { width: 12rem}
+
+.center-vh {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,18 @@
+.social-link{
+  list-style: none;
+  &__elt {
+    display: inline-block;
+  }
+
+  &__elt:not(:last-of-type) {
+    margin-right: 1rem;
+  }
+
+  &__content:link,
+  &__content:visited {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 2.5rem;
+  }
+}
+

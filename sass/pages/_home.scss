@@ -1,0 +1,143 @@
+/* ********************************************************************************** */
+/*                                       HEADER                                       */
+/* ********************************************************************************** */
+
+.header {
+  padding-top: 2rem;  
+}
+
+.logo {
+  @include transition(all .3s);
+
+  &:hover img{
+    @include transform(translateY(-3px));
+    @include filter(drop-shadow(0 12px 12px $color-gray-2));
+  }
+
+  &:active img{
+    @include transform(translateY(-1px));
+    @include filter(drop-shadow(0 8px 8px $color-gray-2));
+  }
+
+}
+
+/* ********************************************************************************** */
+/*                                        MAIN                                        */
+/* ********************************************************************************** */
+
+.stat {
+  max-width: 90rem;
+  width: 100%;
+
+  & > div {
+    margin-top: 10rem;
+  }
+
+  &__number {
+    font-size: 5.5rem;
+    font-weight: bold;
+  }
+
+  &__number span {
+    position: relative;
+  }
+
+  &__number span::before {
+    content: "";
+    background-size: 3rem 3rem;
+    display: inline-block;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    left: 0;
+    top: -3rem;
+  }
+
+  &__item {
+    color: #888;
+  }
+}
+
+#communities::before {
+  background-image: url(../images/icon-communities.svg);
+}
+
+#messages::before {
+  background-image: url(../images/icon-messages.svg);
+}
+
+/* ********************************************************************************** */
+/*                                       FOOTER                                       */
+/* ********************************************************************************** */
+
+.footer {
+  background-color: $color-neutral-very-dark;
+  color: $color-white;
+}
+
+/* ********** Subscribe (text imput and button) ********** */
+.form-subscribe {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: row wrap;
+
+  &__email, &__button {
+    font-size: 100%;
+    padding: 1rem;
+    @include border-radius(4px);
+  }
+
+  &__email {
+    width: 100%;
+    border: none;
+    margin: 1.5rem 0;
+  }
+
+  &__button {
+    width: 50%;
+    font-weight: bold;
+  }
+}
+
+/* ********** Footer Logo ********** */
+.footer-logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  & img {
+    width: 1em;
+  }
+}
+
+/* ********** Phone nomber and Email ********** */
+.contacts {
+  margin: 2rem 0;
+  list-style: none;
+
+  &__elt {
+    margin-bottom: 1rem;
+    position: relative;
+    list-style-position: inside;
+    &--phone {
+      list-style-image: url("../images/icon-phone.svg");
+    }
+
+    &--email {
+      list-style-image: url("../images/icon-email.svg");
+    }
+
+  }
+
+  &__content {
+    padding-left: 1rem;
+
+    &:link,
+    &:visited {
+      text-decoration: none;margin: 1.2rem 0;
+      color: $color-white;
+    }
+
+  }
+
+}

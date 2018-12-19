@@ -1,0 +1,19 @@
+.attribution {
+  font-size: 1.1rem; 
+  text-align: center;
+  margin: 2rem auto;
+
+  & a:link,
+  & a:visited {
+    color: hsl(228, 45%, 44%);
+  }
+
+  & a:link span,
+  & a:visited span {
+    text-decoration: none;
+    color: $color-white;
+    display: inline-block;
+    padding: 5px;
+  }
+
+}

@@ -1,0 +1,76 @@
+section:nth-of-type(2n) {
+  background-color: $color-neutral-very-pale;
+}
+
+.area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    max-width: 144rem;
+    width: 90%;
+    padding: 1rem;
+
+    &--header {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+    }
+  }
+
+  &--extra {
+
+    &::after, &::before {
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      position: absolute;
+      left: 0;
+    }
+
+    &::after {
+      background-position: bottom;
+    }
+
+    &::before {
+      background-position: top;
+    }
+
+    &--1::after, 
+    &--1::before, 
+    &--2::after, 
+    &--2::before, 
+    &--f::before {
+      content: "";
+    }
+
+    &--1 {
+      &::after {
+        @include bg-section(5.5rem, 100%, -5rem, "../images/bg-section-bottom-mobile-1.svg");
+      }
+
+      &::before {
+        @include bg-section(11.1rem, -11rem, 0rem, "../images/bg-section-top-mobile-1.svg");
+      }
+
+    }
+
+    &--2 {
+      &::after {
+        @include bg-section(10rem, 100%, -9.5rem, "../images/bg-section-bottom-mobile-2.svg");
+      }
+      &::before {
+        @include bg-section(10rem, -9.5rem, 0rem, "../images/bg-section-top-mobile-2.svg");
+      }
+    }
+
+    &--f::before {
+      @include bg-section(5.2rem, -5rem, 0rem, "../images/bg-footer-top-mobile.svg");
+    }
+
+  }
+
+}
