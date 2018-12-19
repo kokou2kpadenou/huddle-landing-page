@@ -1,0 +1,27 @@
+@include responsive(desktop) {
+  .col2 {
+    display: flex;
+    justify-content: space-between;
+
+    & > div {
+      width: 45%;
+    }
+
+    &--reverse {
+      flex-flow: row-reverse;
+    }
+
+    &--vertical-center {
+      align-items: center;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+

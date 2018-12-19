@@ -1,6 +1,7 @@
 /* ********** Body ********** */
 body {
   font-size: 1.6rem;
+  @include responsive(desktop) { font-size: 1rem;}
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -27,4 +28,27 @@ body {
 /* ********** Paragraphs ********** */
 .paragraph { 
   line-height: 145%;
+
+  &--title { 
+    @include responsive(desktop) {
+      width: 35rem;
+      font-size: 1.1rem;
+    }
+  }
+
+  &--footer { 
+    @include responsive(desktop) {
+      line-height: 165%;
+      font-size: .9rem;  
+      width: 70%;
+      font-weight: lighter;
+    }    
+  }
+
+  &--section { 
+    @include responsive(desktop) {
+      line-height: 165%;
+      font-size: 1rem;
+    }
+  }
 }

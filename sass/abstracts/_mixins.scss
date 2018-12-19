@@ -30,3 +30,12 @@
   -webkit-box-shadow: $property;
   box-shadow: $property;
 }
+
+
+@mixin responsive ($breakpoint) {
+  @if $breakpoint == desktop {
+    @media screen and (min-width: 37.5em) {
+      @content
+    };
+  }
+}

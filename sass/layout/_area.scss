@@ -50,10 +50,16 @@ section:nth-of-type(2n) {
     &--1 {
       &::after {
         @include bg-section(5.5rem, 100%, -5rem, "../images/bg-section-bottom-mobile-1.svg");
+        @include responsive(desktop) {
+          @include bg-section(7rem, 100%, -6.8rem, "../images/bg-section-bottom-desktop-1.svg");
+        }
       }
 
       &::before {
         @include bg-section(11.1rem, -11rem, 0rem, "../images/bg-section-top-mobile-1.svg");
+        @include responsive(desktop) {
+          @include bg-section(8rem, -7.8rem, 0rem, "../images/bg-section-top-desktop-1.svg");
+        }
       }
 
     }
@@ -61,14 +67,23 @@ section:nth-of-type(2n) {
     &--2 {
       &::after {
         @include bg-section(10rem, 100%, -9.5rem, "../images/bg-section-bottom-mobile-2.svg");
+        @include responsive(desktop) {
+          @include bg-section(7rem, 100%, -6.8rem, "../images/bg-section-bottom-desktop-2.svg");
+        }        
       }
       &::before {
         @include bg-section(10rem, -9.5rem, 0rem, "../images/bg-section-top-mobile-2.svg");
+        @include responsive(desktop) {
+          @include bg-section(8rem, -7.8rem, 0rem, "../images/bg-section-top-desktop-2.svg");
+        }             
       }
     }
 
     &--f::before {
       @include bg-section(5.2rem, -5rem, 0rem, "../images/bg-footer-top-mobile.svg");
+        @include responsive(desktop) {
+          @include bg-section(8.2rem, -8rem, 0rem, "../images/bg-footer-top-desktop.svg");
+        }           
     }
 
   }

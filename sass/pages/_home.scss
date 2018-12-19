@@ -80,6 +80,7 @@
   margin: 2rem 0;
   display: flex;
   justify-content: flex-end;
+  @include responsive(desktop) { justify-content: space-between; }
   align-items: center;
   flex-flow: row wrap;
 
@@ -93,11 +94,16 @@
     width: 100%;
     border: none;
     margin: 1.5rem 0;
+    @include responsive(desktop) {
+      width: 58%;
+      margin: 0;
+    }
   }
 
   &__button {
     width: 50%;
     font-weight: bold;
+   @include responsive(desktop) { width: 32%; }
   }
 }
 
