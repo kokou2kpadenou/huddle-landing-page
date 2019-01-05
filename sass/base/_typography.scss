@@ -8,22 +8,23 @@ body {
 /* ********** Headings ********** */
 .heading {
   font-family: 'Poppins', sans-serif;
+  &--1 {
+    font-size: 2.6rem;
+    margin: 2rem 0;
+  }
+
+  &--2 {
+    font-size: 2.1rem;
+    margin: 2rem 0;
+  }
+
+  &--3 {
+    font-size: 1.8rem;
+    margin: 1.2rem 0;
+  }
 }
 
-.heading--1 {
-  font-size: 2.6rem;
-  margin: 2rem 0;
-}
 
-.heading--2 {
-  font-size: 2.1rem;
-  margin: 2rem 0;
-}
-
-.heading--3 {
-  font-size: 1.8rem;
-  margin: 1.2rem 0;
-}
 
 /* ********** Paragraphs ********** */
 .paragraph { 
