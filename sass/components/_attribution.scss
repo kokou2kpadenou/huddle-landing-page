@@ -1,20 +1,20 @@
 .attribution {
   font-size: 1.1rem;
-  @include responsive(desktop) { font-size: .8rem; }  
+  @include responsive(desktop) { font-size: .8rem; }
   text-align: center;
   margin: 2rem auto;
 
-  & a:link,
-  & a:visited {
-    color: hsl(228, 45%, 44%);
-  }
-
-  & a:link span,
-  & a:visited span {
-    text-decoration: none;
-    color: $color-white;
-    display: inline-block;
-    padding: 5px;
+  & a {
+    &:link,
+    &:visited {
+      color: hsl(228, 45%, 44%);
+      span {
+        text-decoration: none;
+        color: $color-white;
+        display: inline-block;
+        padding: 5px;
+      }
+    }
   }
 
 }
