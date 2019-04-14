@@ -25,7 +25,12 @@ section:nth-of-type(2n) {
 
     &::after, &::before {
       background-repeat: no-repeat;
-      background-size: cover;
+      // background-size: cover;
+      // Bring the cover to 102% to cover small white space at left and right on safari
+      background-size: 108%;
+      @include responsive(desktop) {
+        background-size: 102%;
+      };
       width: 100%;
       position: absolute;
       left: 0;
@@ -49,9 +54,9 @@ section:nth-of-type(2n) {
 
     &--1 {
       &::after {
-        @include bg-section(5.5rem, 100%, -5rem, "../images/bg-section-bottom-mobile-1.svg");
+        @include bg-section(5.5rem, 99%, -5rem, "../images/bg-section-bottom-mobile-1.svg");
         @include responsive(desktop) {
-          @include bg-section(7rem, 100%, -6.8rem, "../images/bg-section-bottom-desktop-1.svg");
+          @include bg-section(7rem, 99%, -6.8rem, "../images/bg-section-bottom-desktop-1.svg");
         }
       }
 
@@ -66,13 +71,13 @@ section:nth-of-type(2n) {
 
     &--2 {
       &::after {
-        @include bg-section(10rem, 100%, -9.5rem, "../images/bg-section-bottom-mobile-2.svg");
+        @include bg-section(11rem, 99%, -10rem, "../images/bg-section-bottom-mobile-2.svg");
         @include responsive(desktop) {
-          @include bg-section(7rem, 100%, -6.8rem, "../images/bg-section-bottom-desktop-2.svg");
+          @include bg-section(7rem, 99%, -6.8rem, "../images/bg-section-bottom-desktop-2.svg");
         }
       }
       &::before {
-        @include bg-section(10rem, -9.5rem, 0rem, "../images/bg-section-top-mobile-2.svg");
+        @include bg-section(11rem, -10.5rem, 0rem, "../images/bg-section-top-mobile-2.svg");
         @include responsive(desktop) {
           @include bg-section(8rem, -7.8rem, 0rem, "../images/bg-section-top-desktop-2.svg");
         }

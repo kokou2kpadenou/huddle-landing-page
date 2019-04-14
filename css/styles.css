@@ -198,10 +198,13 @@ section:nth-of-type(2n) {
       align-content: center; }
   .area--extra::after, .area--extra::before {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 108%;
     width: 100%;
     position: absolute;
     left: 0; }
+    @media screen and (min-width: 37.5em) {
+      .area--extra::after, .area--extra::before {
+        background-size: 102%; } }
   .area--extra::after {
     background-position: bottom; }
   .area--extra::before {
@@ -211,13 +214,13 @@ section:nth-of-type(2n) {
   .area--extra--1::after {
     height: 5.5rem;
     bottom: -5rem;
-    top: 100%;
+    top: 99%;
     background-image: url("../images/bg-section-bottom-mobile-1.svg"); }
     @media screen and (min-width: 37.5em) {
       .area--extra--1::after {
         height: 7rem;
         bottom: -6.8rem;
-        top: 100%;
+        top: 99%;
         background-image: url("../images/bg-section-bottom-desktop-1.svg"); } }
   .area--extra--1::before {
     height: 11.1rem;
@@ -231,20 +234,20 @@ section:nth-of-type(2n) {
         top: -7.8rem;
         background-image: url("../images/bg-section-top-desktop-1.svg"); } }
   .area--extra--2::after {
-    height: 10rem;
-    bottom: -9.5rem;
-    top: 100%;
+    height: 11rem;
+    bottom: -10rem;
+    top: 99%;
     background-image: url("../images/bg-section-bottom-mobile-2.svg"); }
     @media screen and (min-width: 37.5em) {
       .area--extra--2::after {
         height: 7rem;
         bottom: -6.8rem;
-        top: 100%;
+        top: 99%;
         background-image: url("../images/bg-section-bottom-desktop-2.svg"); } }
   .area--extra--2::before {
-    height: 10rem;
+    height: 11rem;
     bottom: 0rem;
-    top: -9.5rem;
+    top: -10.5rem;
     background-image: url("../images/bg-section-top-mobile-2.svg"); }
     @media screen and (min-width: 37.5em) {
       .area--extra--2::before {

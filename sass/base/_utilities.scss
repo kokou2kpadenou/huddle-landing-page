@@ -27,8 +27,8 @@
   margin-top: 6rem;
 }
 
-.img-80-100 { 
-  width: 100%; 
+.img-80-100 {
+  width: 100%;
   @include responsive(desktop) { width: 85%; }
 }
 .img-100 { width: 100%; }

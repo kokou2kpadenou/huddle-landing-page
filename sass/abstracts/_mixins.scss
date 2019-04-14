@@ -17,7 +17,7 @@
 
 @mixin filter($property) {
   -webkit-filter: $property;
-  filter: $property;  
+  filter: $property;
 }
 
 @mixin border-radius($property) {
